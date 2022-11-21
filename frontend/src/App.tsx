@@ -20,11 +20,14 @@ function App() {
       </header>
       {/* NavBar */}
       <nav id="navbar">
-        <ul className="navbar_menu">
-          <li className="navbar_menu_item">홈플러스</li>
-          <li className="navbar_menu_item">이마트</li>
-          <li className="navbar_menu_item">롯데마트</li>
-        </ul>
+        <div className="navbar_menu">
+          <ul className="navbar_menu_list">
+            <li className="navbar_menu_list_item">홈플러스</li>
+            <li className="navbar_menu_list_item">이마트</li>
+            <li className="navbar_menu_list_item">롯데마트</li>
+          </ul>
+        </div>
+        <div className="author">만든이소개</div>
       </nav>
       {/* Main */}
       <main id="main">
