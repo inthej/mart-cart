@@ -17,14 +17,19 @@ function App() {
           <button>검색</button>
         </div>
       </header>
+      <nav id="navbar">
+        <ul className="navbar_menu">
+          <li className="navbar_menu_item">홈플러스</li>
+          <li className="navbar_menu_item">이마트</li>
+          <li className="navbar_menu_item">롯데마트</li>
+        </ul>
+      </nav>
       <main id="main">
-        <div className="main__content">
-          <section id="homeplus">HomePlus</section>
-          <section id="emart">Emart</section>
-          <section id="lottemart">LotteMart</section>
-        </div>
-        <div id="main__banner">Banner</div>
+        <section id="emart">홈플러스</section>
+        <section id="emart">이마트</section>
+        <section id="lottemart">LotteMart</section>
       </main>
+      <aside id="aside">베너</aside>
       <footer id="footer">Footer</footer>
     </div>
   );
