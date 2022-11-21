@@ -18,16 +18,15 @@ function App() {
           <button>검색</button>
         </div>
       </header>
-      {/* NavBar */}
+      {/* Navbar */}
       <nav id="navbar">
-        <div className="navbar_menu">
-          <ul className="navbar_menu_list">
-            <li className="navbar_menu_list_item">홈플러스</li>
-            <li className="navbar_menu_list_item">이마트</li>
-            <li className="navbar_menu_list_item">롯데마트</li>
+        <div className="navbar__banner">
+          <ul className="navbar__banner__list">
+            <li className="navbar__banner__list__item">베너1</li>
+            <li className="navbar__banner__list__item">베너2</li>
           </ul>
         </div>
-        <div className="author">만든이소개</div>
+        <div className="navbar__author">만든이</div>
       </nav>
       {/* Main */}
       <main id="main">
@@ -44,13 +43,6 @@ function App() {
           <div className="main__lottemart-content">내용</div>
         </section>
       </main>
-      {/* Aside */}
-      <aside id="aside">
-        <ul className="aside__banner">
-          <li className="aside__banner_item">베너1</li>
-          <li className="aside__banner_item">베너2</li>
-        </ul>
-      </aside>
       {/* Footer */}
       <footer id="footer">Footer</footer>
     </div>
