@@ -42,7 +42,12 @@ function App() {
         </section>
       </main>
       {/* Aside */}
-      <aside id="aside">베너</aside>
+      <aside id="aside">
+        <ul className="aside__banner">
+          <li className="aside__banner_item">베너1</li>
+          <li className="aside__banner_item">베너2</li>
+        </ul>
+      </aside>
       {/* Footer */}
       <footer id="footer">Footer</footer>
     </div>
