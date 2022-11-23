@@ -10,7 +10,7 @@ function App() {
       <header id="header">
         <div className="header__logo">
           <FontAwesomeIcon icon={faStore} />
-          현마트
+          마트카트
         </div>
         <div className="header__searchbar">
           <input type="text" name="searchbar" id="searchbar" />
