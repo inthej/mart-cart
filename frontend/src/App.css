@@ -10,7 +10,7 @@
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
-  --color-light-grey: #7c7979;
+  --color-light-grey: #ddd;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -30,8 +30,13 @@
 }
 
 /* Universal tags */
+
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 /* Typography */
@@ -64,6 +69,117 @@ p {
   margin: 4px 0;
 }
 
+body {
+  margin: 0 auto;
+  background-position:center;
+  background-size: contain;
+}
+
+#root {
+  /* height: 100%; */
+}
+
 .App {
-  background: red;
+  /* height: 100%; */
+}
+
+#header {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header__logo {
+  font-size:40px;
+  color:#009900;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.header__caption {
+  font-size:17px;
+  margin-bottom:15px;
+}
+
+.searchbar { 
+  width: auto;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: #009900;
+  padding:10px 0px 10px 0px;
+  color:white;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbar__search-input {
+  width: 500px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#searchbar__search-btn {
+  width: 50px;
+  height: 40px;
+}
+
+#searchbar__init-btn {
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.main {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+#banners {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#banners>img {
+  margin: 2px;
+  border: 2px solid;
+}
+
+#content {
+  /* background-color: yellow; */
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-right: 2px;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#content>section {
+  width: 30%;
+  min-width: 300px;
+  border: 2px solid;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 50px;
 }

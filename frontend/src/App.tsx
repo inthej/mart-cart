@@ -1,49 +1,63 @@
 import './App.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStore } from '@fortawesome/free-solid-svg-icons'
+import { faStore, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
     <div className="App">
       {/* Header */}
       <header id="header">
-        <div className="header__logo">
-          <FontAwesomeIcon icon={faStore} />
-          마트카트
-        </div>
-        <div className="header__searchbar">
-          <input type="text" name="searchbar" id="searchbar" />
-          <button>검색</button>
-        </div>
+          <div className="header__logo">
+            <FontAwesomeIcon icon={faCartShopping}/> 마트카트
+          </div>
+          <div className="header__caption">대형마트 가격비교 사이트</div>
       </header>
-      {/* Navbar */}
-      <nav id="navbar">
-        <div className="navbar__banner">
-          <ul className="navbar__banner__list">
-            <li className="navbar__banner__list__item">베너1</li>
-            <li className="navbar__banner__list__item">베너2</li>
-          </ul>
+        
+      {/* Menu */}
+      <div className="searchbar">
+        <input type="text" placeholder="상품명" id="searchbar__search-input"/>
+        <button id="searchbar__search-btn">검색</button>
+        <button id="searchbar__init-btn">초기화</button>
+      </div>
+        
+      {/* Body */}
+      <main className="main">
+        <section id="banners">
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+          <img src="./img/banner_sample.jpg" height="60" width="250" />
+        </section>
+        <div id="content">
+          <section id="content__homplus">
+            홈플러스
+          </section>
+          <section id="content__emart">
+            이마트
+          </section>
+          <section id="content__lottemart">
+            롯데마트
+          </section>
         </div>
-        <div className="navbar__author">만든이</div>
-      </nav>
-      {/* Main */}
-      <main id="main">
-        <section className="main__homeplus">
-          <header className="main__homeplus-header">홈플러스</header>
-          <div className="main__homeplus-content">내용</div>
-        </section>
-        <section className="main__emart">
-          <header className="main__emart-header">이마트</header>
-          <div className="main__emart-content">내용</div>
-        </section>
-        <section className="main__lottemart">
-          <header className="main__lottemart-header">롯데마트</header>
-          <div className="main__lottemart-content">내용</div>
-        </section>
+        {/* <section id="content">
+            <h3>Content section</h3>
+        </section> */}
       </main>
-      {/* Footer */}
-      <footer id="footer">Footer</footer>
+        
+      {/* <!-- Footer Section --> */}
+      {/* <footer className="footer">Footer Section</footer> */}
     </div>
   )
 }
